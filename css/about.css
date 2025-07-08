@@ -1,0 +1,89 @@
+.aboutme {
+    padding-top: 100px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray);
+    justify-content: center;
+    margin-bottom: 55px;
+    align-items: center;
+    text-align: justify;
+
+
+}
+
+.aboutme .about-all .about-topic h2 {
+    border-bottom: 2px solid;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #155dfc;
+}
+
+.aboutme .about-all {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutme .about-all .about-para {
+    width: 800px;
+}
+
+.aboutme .about-all .about-para p {
+    font-size: 1.rem;
+}
+
+.what-done {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.what {
+    border-bottom: 2px solid;
+    font-weight: bold;
+    color: #3458a7;
+    width: fit-content;
+
+}
+
+.outside-office {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.outside-office h2 {
+    border-bottom: 2px solid;
+    font-weight: bold;
+    color: #3458a7;
+    width: fit-content;
+}
+
+.whats-next {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whats-next h2 {
+    border-bottom: 2px solid;
+    font-weight: bold;
+    color: #3458a7;
+    width: fit-content;
+}
+
+@media (max-width: 1200px) {
+    .about-all {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .aboutme .about-all .about-para {
+        width: 90%;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,143 @@
+/* .container-fluid{
+    justify-content: center;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+} */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 105px 20%;
+}
+
+.container-fluid {
+    margin-top: 55px;
+}
+
+.hero-container p {
+    text-align: justify;
+    color: var(--gray);
+}
+
+.clg-name {
+    position: absolute;
+    right: 18px;
+    bottom: 13px;
+    color: #0f63d9;
+}
+
+
+.timeline-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    text-align: center;
+        border-bottom: 2px solid;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+}
+
+.timeline-date {
+    position: absolute;
+    left: -138px;
+    top: 20px;
+    color: var(--primary);
+    font-weight: 600;
+    width: 100px;
+    text-align: right;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--light);
+}
+
+.timeline-content p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.current-info {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 8px;
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 500px) {
+.clg-name {
+    position: relative;
+    color: #0f63d9;
+    text-align: center;
+}
+}
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-date {
+        position: static;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: var(--primary);
+        width: auto;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-container .hero-image {
+        margin-top: 140px;
+    }
+
+    .hero-container .hero-image img {
+        height: 350px !important;
+    }
+}
+
+
+@media (max-width: 1000px) {
+ .hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 105px 10%;
+}
+}

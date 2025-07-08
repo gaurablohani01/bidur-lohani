@@ -86,4 +86,16 @@
         width: 90%;
         text-align: justify;
     }
+    .about-all{
+        font-size:  0.9rem;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+ 
+    .about-all{
+        font-size:  0.9rem;
+        padding: 15px;
+    }
 }

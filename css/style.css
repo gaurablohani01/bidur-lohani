@@ -136,7 +136,7 @@ body {
     }
 
     .name {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .title {
@@ -148,9 +148,10 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
  .hero-container{
     flex-direction: column;
+    margin-bottom: 40px;
  }
  .hero-container .hero-image{
     margin-top: 140px;
@@ -161,4 +162,16 @@ body {
  .hero-container .hero-content{
     margin-top:45px
  }
+
+ 
+}
+
+@media (max-width:1200px) {
+     .hero-container .hero-image svg {
+  top: 34px;
+}
+    
+.about {
+  font-size: 1rem;
+}
 }

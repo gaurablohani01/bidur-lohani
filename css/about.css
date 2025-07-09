@@ -15,8 +15,7 @@
     border-bottom: 2px solid;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #155dfc;
-}
+    color: #a92020;}
 
 .aboutme .about-all {
     display: flex;
@@ -31,7 +30,8 @@
 }
 
 .aboutme .about-all .about-para p {
-    font-size: 1.rem;
+    font-size: 1.1rem;
+    color: #fff;
 }
 
 .what-done {

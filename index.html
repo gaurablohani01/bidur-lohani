@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bidur Prasad Lohani</title>
+    <meta name="description" content="Bidur Prasad Lohani - Business Graduate, Strategic Thinker, and Purpose-Driven Professional from Nepal">
+    <meta name="keywords" content="Bidur Lohani, business graduate, strategic thinker, BBA, Nepal, professional">
+    <meta name="author" content="Bidur Prasad Lohani">
+    <title>Bidur Prasad Lohani - Business Graduate & Strategic Thinker</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -12,33 +15,37 @@
 </head>
 
 <body>
-<div id="particles-js" style="background-color: #000; width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
-     <nav class="navbar border-b border-gray-800 fixed w-full z-10">
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="particles-js" style="background-color: #000; width: 100%; height: 100%; position: absolute; top: 0; left: 0;" aria-hidden="true"></div>
+    
+    <nav class="navbar border-b border-gray-800 w-full z-10" role="navigation" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <span class="text-xl font-bold text-white">Bidur Prasad Lohani</span>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="/" class="text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                          <a href="/about.html"
-                            class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Me</a>
-                             <a href="/work.html"
-                            class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Career Footprint</a>
-                        <a href="education.html"
-                            class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Education & Certifications</a>
-                             
-                        <a href="/contact.html"
-                            class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                           
+                    <div class="ml-10 flex items-baseline space-x-8" role="menubar">
+                        <a href="/" class="nav-link active text-white px-3 py-2 rounded-md text-sm font-medium" style="box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6) !important;" role="menuitem" aria-current="page">Home</a>
+                        <a href="/about.html" class="nav-link text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium" role="menuitem">About Me</a>
+                        <a href="/work.html" class="nav-link text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium" role="menuitem">Career Footprint</a>
+                        <a href="education.html" class="nav-link text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium" role="menuitem">Education & Certifications</a>
+                        <a href="/contact.html" class="nav-link text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium" role="menuitem">Contact</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+                    <button id="mobile-menu-button" type="button" 
+                        aria-expanded="false" 
+                        aria-controls="mobile-menu"
+                        aria-label="Toggle navigation menu"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
+                            stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -46,30 +53,24 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden ">
+        <div id="mobile-menu" class="hidden md:hidden" role="menu" aria-labelledby="mobile-menu-button">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="/" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="about.html"
-                    class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                     <a href="work.html"
-                    class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Career Footprint</a>
-             
-                <a href="education.html"
-                    class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Education & Certifications</a>
-             
-                <a href="/contact.html"
-                    class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="/" class="text-white block px-3 py-2 rounded-md text-base font-medium" role="menuitem" aria-current="page">Home</a>
+                <a href="about.html" class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium" role="menuitem">About</a>
+                <a href="work.html" class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium" role="menuitem">Career Footprint</a>
+                <a href="education.html" class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium" role="menuitem">Education & Certifications</a>
+                <a href="/contact.html" class="text-gray-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium" role="menuitem">Contact</a>
             </div>
         </div>
     </nav>
 
 
-    <div class="hero-container">
-        <div class="hero-image">
-       <svg class="bg-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="150" cy="150" r="120" fill="#8A2BE2"></circle>
-                
-                
+    <main class="hero-container" id="main-content" role="main">
+        <section class="hero-image" aria-label="Profile photo">
+            <svg class="bg-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Transparent circle with white border -->
+                <circle cx="150" cy="150" r="120" fill="transparent" stroke="white" stroke-width="1" />
+                <!-- Dotted pattern -->
                 <g fill="#000" opacity="0.1">
                     <circle cx="200" cy="120" r="2"></circle>
                     <circle cx="210" cy="120" r="2"></circle>
@@ -80,51 +81,77 @@
                 </g>
             </svg>
             <div class="img">
-                <img src="/img/461238398_3887985111439479_6304016818964320270_n-removebg-preview.png" alt="">
+                <img src="/img/461238398_3887985111439479_6304016818964320270_n-removebg-preview.png" 
+                     alt="Professional photo of Bidur Prasad Lohani" 
+                     loading="lazy">
             </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/bidurpd.lohani"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/bidurpdlohani/"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-        </div>
+            <nav class="social-links" aria-label="Social media links">
+                <a href="https://www.facebook.com/bidurpd.lohani" 
+                   aria-label="Visit Bidur's Facebook profile" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/bidurpdlohani/" 
+                   aria-label="Visit Bidur's Instagram profile" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#" 
+                   aria-label="Visit Bidur's Twitter profile" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                </a>
+                <a href="#" 
+                   aria-label="Visit Bidur's LinkedIn profile" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+            </nav>
+        </section>
 
-
-        <div class="hero-content">
+        <section class="hero-content">
             <p class="greeting">Hi there, I'm</p>
             <h1 class="name">Bidur Prasad Lohani</h1>
             <p class="about">
                 Business Graduate | Strategic Thinker | Driven by Purpose
             </p>
-            <a href="#contact" class="btn">Download CV</a>
-
-
-        </div>
-    </div>
-   <footer class="bg-gray-900 border-t border-gray-800 py-8" style="background-color: #000;">
+            <a href="#contact" class="btn" aria-label="Download Bidur's CV">
+                <i class="bi bi-download" aria-hidden="true"></i>
+                Download CV
+            </a>
+        </section>
+    </main>
+    <footer class="border-t border-gray-800 py-8" role="contentinfo">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <h3 class="text-xl font-bold text-white">Bidur Lohani</h3>
                     <p class="text-gray-400 text-sm mt-1">Business Graduate | Strategic Thinker | Driven by Purpose</p>
                 </div>
-
-
-            
-
                 <div class="text-gray-400 text-sm">
-                    info@bidurlohani.com.np
+                    <a href="mailto:info@bidurlohani.com.np" class="hover:text-blue-400 transition-colors">
+                        info@bidurlohani.com.np
+                    </a>
                 </div>
             </div>
-
             <div class="mt-8 pt-6 border-t border-gray-800 text-center text-gray-400 text-sm">
-                © 2025 Bidur Prasad Lohani. All rights reserved. <br> Developed By <a
-                    href="www.lohanigaurab.com.np">Gaurab Lohani</a>
+                © 2025 Bidur Prasad Lohani. All rights reserved. <br> 
+                Developed By <a href="https://www.lohanigaurab.com.np" 
+                               class="hover:text-blue-400 transition-colors" 
+                               target="_blank" 
+                               rel="noopener noreferrer">Gaurab Lohani</a>
             </div>
         </div>
     </footer>
 
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
